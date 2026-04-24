@@ -167,62 +167,48 @@ export function PromoLeadSection() {
           className="absolute inset-0 h-full w-full object-cover object-center md:hidden"
         />
 
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,11,8,0.08)_0%,rgba(18,11,8,0.18)_58%,rgba(18,11,8,0.58)_100%)] md:bg-[linear-gradient(90deg,rgba(18,11,8,0.18)_0%,rgba(18,11,8,0.04)_34%,rgba(18,11,8,0.06)_64%,rgba(18,11,8,0.16)_100%)]" />
+        {/* OVERLAY 15% */}
+        <div className="absolute inset-0 bg-black/15" />
 
-        <div className="relative z-10 flex min-h-[760px] items-end py-10 md:absolute md:inset-0 md:min-h-0 md:items-center md:py-0">
-          <div className="mx-auto grid w-full max-w-7xl items-end gap-7 px-6 md:grid-cols-[0.82fr_1.18fr] md:items-center md:px-10 lg:px-14 xl:px-20">
-            {/* TEXTO */}
-            <motion.div className="max-w-[360px] rounded-[24px] border border-white/12 bg-[#241710]/42 p-5 text-left backdrop-blur-[3px] md:self-end md:mb-12 md:max-w-[390px] md:bg-[#241710]/30 md:p-6 lg:mb-16">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-white/76">
+        <div className="relative z-10 flex min-h-[760px] items-center py-16 md:absolute md:inset-0 md:min-h-0 md:py-0">
+          <div className="mx-auto flex w-full max-w-7xl flex-col items-center px-6 text-center md:px-10 lg:px-14 xl:px-20">
+            {/* TEXTO SUPERIOR CENTRALIZADO */}
+            <motion.div className="mx-auto max-w-[920px]">
+              <p className="text-[11px] uppercase tracking-[0.24em] text-white/86 drop-shadow-[0_2px_10px_rgba(0,0,0,0.32)] md:text-xs">
                 Condições exclusivas
               </p>
 
-              <h2 className="mt-3 text-[34px] leading-[1.05] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.28)] md:text-[42px] lg:text-[48px]">
+              <h2 className="mx-auto mt-4 max-w-[900px] text-[34px] leading-[1.08] text-white drop-shadow-[0_3px_16px_rgba(0,0,0,0.40)] md:text-[56px] lg:text-[64px]">
                 Garanta as melhores promoções do Renova Therapy.
               </h2>
 
-              <p className="mt-4 max-w-[31ch] text-[15px] leading-relaxed text-white/84 drop-shadow-[0_2px_10px_rgba(0,0,0,0.22)]">
-                Aproveite a condição especial para garantir o seu protocolo
-                completo.
+              <p className="mx-auto mt-5 max-w-[620px] text-[16px] leading-relaxed text-white/90 drop-shadow-[0_2px_12px_rgba(0,0,0,0.34)] md:text-lg">
+                Aproveite a condição especial para garantir o seu protocolo completo.
               </p>
             </motion.div>
 
-            {/* CTA */}
-            <motion.div className="ml-auto flex w-full max-w-[500px] flex-col rounded-[28px] border border-[#e7d9c8] bg-[#f6f2eb]/94 p-6 text-left shadow-[0_24px_70px_rgba(36,23,16,0.22)] backdrop-blur-md md:p-7 lg:max-w-[520px] lg:p-8">
-              <p className="text-[12px] uppercase tracking-[0.24em] text-[#8d6b50]">
+            {/* CTA CENTRALIZADO SEM BLOCO */}
+            <motion.div className="mx-auto mt-10 flex w-full max-w-[720px] flex-col items-center text-center md:mt-12">
+              <p className="text-[12px] uppercase tracking-[0.24em] text-white/86 drop-shadow-[0_2px_10px_rgba(0,0,0,0.34)]">
                 Kit Renova Therapy
               </p>
 
-              <div className="mt-5">
-                <p className="text-sm font-medium text-[#6a5545]">
-                  Por apenas
-                </p>
+              <p className="mt-5 text-sm font-medium text-white/88 drop-shadow-[0_2px_10px_rgba(0,0,0,0.34)]">
+                Por apenas
+              </p>
 
-                <p className="mt-1 text-[50px] leading-none text-[#241710] md:text-[60px] lg:text-[64px]">
-                  R$239,90
-                </p>
-              </div>
+              <p className="mt-1 text-[54px] leading-none text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.45)] md:text-[74px] lg:text-[86px]">
+                R$239,90
+              </p>
 
-              <div className="mt-6 grid gap-3 text-[15px] leading-relaxed text-[#4f3c30]">
-                <p className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#9b7857]" />
-                  15% de desconto à vista no PIX.
-                </p>
-
-                <p className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#9b7857]" />
-                  Ou em até 3x sem juros no cartão.
-                </p>
-
-                <p className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#9b7857]" />
-                  Frete grátis.
-                </p>
+              <div className="mt-6 flex flex-col items-center gap-2 text-[15px] leading-relaxed text-white/92 drop-shadow-[0_2px_12px_rgba(0,0,0,0.38)] md:text-base">
+                <p>15% de desconto à vista no PIX.</p>
+                <p>Ou em até 3x sem juros no cartão + frete grátis.</p>
               </div>
 
               <a
                 href="#"
-                className="mt-7 inline-flex min-h-[56px] items-center justify-center rounded-full bg-[#241710] px-8 py-4 text-center text-white transition hover:bg-[#3a271c]"
+                className="mt-8 inline-flex min-h-[56px] w-full max-w-[520px] items-center justify-center rounded-full bg-white px-8 py-4 text-center text-[#241710] shadow-[0_18px_45px_rgba(0,0,0,0.22)] transition hover:bg-white/90"
               >
                 Garantir agora mesmo o meu Kit
               </a>
