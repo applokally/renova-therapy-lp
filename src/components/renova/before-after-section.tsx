@@ -80,7 +80,7 @@ export function BeforeAfterSection() {
           className="mt-12 flex justify-center"
         >
           <a
-            href="#kit"
+            href="https://pagar.vindi.com.br/f0c69fdf39539221dfbb8109d7bc67641bc9e233"
             className="inline-flex items-center gap-3 rounded-full bg-[#241710] px-7 py-4 text-[12px] font-semibold uppercase tracking-[0.22em] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#9a7244] hover:shadow-[0_18px_35px_rgba(18,10,7,0.20)]"
           >
             <span>Leve este resultado para casa agora!</span>
