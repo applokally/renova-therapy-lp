@@ -81,7 +81,11 @@ function FaqItem({ category, question, answer, isOpen, onToggle }: any) {
           <p className="mt-2 text-xl text-[#241710]">{question}</p>
         </div>
 
-        <ChevronDown className={`transition ${isOpen ? "rotate-180" : ""}`} />
+        <ChevronDown
+          className={`text-[#241710] transition ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
       </button>
 
       {isOpen && <p className="pb-6 text-[#5d493b]">{answer}</p>}
@@ -119,24 +123,24 @@ export function PromoLeadSection() {
 
       <section className="bg-[#f6f2eb] px-6 pb-10 md:px-10 lg:px-14 xl:px-20">
         <div className="mx-auto max-w-7xl">
-          <motion.div className="grid gap-4 border-y border-[#ded1c0] py-5 md:grid-cols-3">
+          <motion.div className="grid gap-4 border-y border-[#d4c2ad] py-5 md:grid-cols-3">
             {promoItems.map((item) => {
               const Icon = item.icon;
 
               return (
                 <motion.div
                   key={item.title}
-                  className="flex items-center gap-4 px-2 py-3 md:px-6"
+                  className="flex items-center gap-4 px-2 py-3 text-[#241710] md:px-6"
                 >
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[#d9c8b5]">
-                    <Icon size={18} />
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#c5a98c] bg-[#fffaf3] text-[#241710] shadow-sm">
+                    <Icon size={18} strokeWidth={1.8} />
                   </span>
 
                   <span>
                     <strong className="block text-[12px] uppercase tracking-[0.20em] text-[#241710]">
                       {item.title}
                     </strong>
-                    <span className="text-[14px] text-[#6a5545]">
+                    <span className="text-[14px] text-[#5d493b]">
                       {item.description}
                     </span>
                   </span>
@@ -149,7 +153,6 @@ export function PromoLeadSection() {
 
       {/* BLOCO FINAL */}
       <section className="relative w-full overflow-hidden bg-[#241710] md:min-h-0">
-
         {/* DESKTOP */}
         <img
           src="/final.png"
@@ -164,68 +167,65 @@ export function PromoLeadSection() {
           className="absolute inset-0 h-full w-full object-cover object-center md:hidden"
         />
 
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,11,8,0.10)_0%,rgba(18,11,8,0.14)_55%,rgba(18,11,8,0.34)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,11,8,0.10)_0%,rgba(18,11,8,0.18)_55%,rgba(18,11,8,0.46)_100%)]" />
 
         <div className="relative z-10 flex min-h-[760px] items-center py-16 md:absolute md:inset-0 md:min-h-0 md:py-0">
-          <div className="mx-auto grid w-full max-w-7xl items-center gap-10 px-6 md:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:px-14 xl:px-20">
-
+          <div className="mx-auto grid w-full max-w-7xl items-center gap-10 px-6 md:grid-cols-[0.68fr_1.32fr] md:px-10 lg:px-14 xl:px-20">
             {/* TEXTO */}
-            <motion.div className="text-center md:text-left">
-
-              <p className="text-xs uppercase tracking-widest text-white/72">
+            <motion.div className="max-w-[330px] text-left md:max-w-[360px]">
+              <p className="text-xs uppercase tracking-widest text-white/78">
                 Condições exclusivas
               </p>
 
-              {/* MOBILE CORRETO EM 2 LINHAS FIXAS */}
-              <h2 className="mt-4 text-[34px] leading-[1.1] text-white md:max-w-[13ch] md:text-6xl">
+              <h2 className="mt-4 text-[38px] leading-[1.08] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.28)] md:max-w-[8.5ch] md:text-[58px] lg:text-[64px]">
                 <span className="block">Garanta as melhores promoções</span>
                 <span className="block">do Renova Therapy.</span>
               </h2>
 
-              <p className="mt-6 text-base text-white/78 md:max-w-[46ch]">
-                Aproveite a condição especial para garantir o seu protocolo completo.
+              <p className="mt-6 max-w-[28ch] text-base leading-relaxed text-white/86 drop-shadow-[0_2px_10px_rgba(0,0,0,0.22)]">
+                Aproveite a condição especial para garantir o seu protocolo
+                completo.
               </p>
-
             </motion.div>
 
             {/* CTA */}
-            <motion.div className="flex flex-col gap-5 rounded-[28px] border border-white/12 bg-white/[0.06] p-6 text-center backdrop-blur-md md:p-8 md:text-left">
-              <p className="text-xs uppercase tracking-[0.24em] text-white/68">
+            <motion.div className="ml-auto flex w-full max-w-[560px] flex-col gap-5 rounded-[28px] border border-white/16 bg-[#241710]/78 p-6 text-left shadow-2xl backdrop-blur-md md:p-7 lg:p-8">
+              <p className="text-xs uppercase tracking-[0.24em] text-white/72">
                 Kit Renova Therapy
               </p>
 
               <div>
-                <p className="text-sm text-white/72">
-                  Por apenas
-                </p>
+                <p className="text-sm font-medium text-white/76">Por apenas</p>
 
-                <p className="mt-2 text-5xl leading-none text-white md:text-6xl">
+                <p className="mt-2 text-[54px] leading-none text-white md:text-[64px]">
                   R$239,90
                 </p>
               </div>
 
-              <div className="grid gap-3 text-sm text-white/78">
-                <p>
+              <div className="grid gap-3 text-[15px] leading-relaxed text-white/86">
+                <p className="flex items-center gap-3">
+                  <span className="h-1.5 w-1.5 rounded-full bg-white/72" />
                   15% de desconto à vista no PIX.
                 </p>
 
-                <p>
+                <p className="flex items-center gap-3">
+                  <span className="h-1.5 w-1.5 rounded-full bg-white/72" />
                   Ou em até 3x sem juros no cartão.
                 </p>
 
-                <p>
+                <p className="flex items-center gap-3">
+                  <span className="h-1.5 w-1.5 rounded-full bg-white/72" />
                   Frete grátis.
                 </p>
               </div>
 
               <a
                 href="#"
-                className="mt-3 inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-[#241710] transition hover:bg-white/90"
+                className="mt-2 inline-flex min-h-[58px] items-center justify-center rounded-full bg-white px-8 py-4 text-center text-[#241710] transition hover:bg-white/90"
               >
                 Garantir agora mesmo o meu Kit
               </a>
             </motion.div>
-
           </div>
         </div>
       </section>
