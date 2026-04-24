@@ -77,12 +77,27 @@ export function Hero() {
                 </h2>
 
                 <div className="mt-3">
-                  <p className="text-[12px] text-[#9d7b5c] line-through">
-                    R$199,80
+                  <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-[#9d7b5c]">
+                    Valor do kit
                   </p>
-                  <p className="text-[20px] font-semibold text-[#241710]">
-                    R$179,90
+
+                  <p className="mt-1 text-[23px] font-semibold tracking-[-0.04em] text-[#241710]">
+                    R$239,90
                   </p>
+
+                  <div className="mt-3 space-y-1.5 border-t border-[#e6d9c9] pt-3">
+                    <p className="text-[11px] leading-4 text-[#4b392d]">
+                      <strong>15% OFF no PIX</strong>
+                    </p>
+
+                    <p className="text-[11px] leading-4 text-[#4b392d]">
+                      ou <strong>3x sem juros</strong> no cartão
+                    </p>
+
+                    <p className="text-[11px] leading-4 text-[#9d7b5c]">
+                      + frete grátis
+                    </p>
+                  </div>
                 </div>
 
                 <a
@@ -123,7 +138,7 @@ export function Hero() {
           <div className="flex items-stretch overflow-hidden rounded-2xl bg-white shadow-[0_12px_30px_rgba(0,0,0,0.35)]">
 
             {/* IMAGEM SEM MARGEM */}
-            <div className="relative w-[90px] min-w-[90px]">
+            <div className="relative w-[92px] min-w-[92px]">
               <Image
                 src="/renovatherapykit.png"
                 alt=""
@@ -133,30 +148,40 @@ export function Hero() {
             </div>
 
             {/* CONTEÚDO */}
-            <div className="flex flex-1 items-center justify-between px-4 py-3">
+            <div className="flex flex-1 items-center justify-between gap-3 px-3 py-3">
 
-              <div className="flex flex-col justify-center">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-[#9d7b5c]">
+              <div className="flex min-w-0 flex-col justify-center">
+                <p className="text-[9px] uppercase tracking-[0.16em] text-[#9d7b5c]">
                   KIT COMPLETO
                 </p>
 
-                <h3 className="text-[14px] text-[#241710] leading-tight">
+                <h3 className="text-[13px] leading-tight text-[#241710]">
                   Renova Therapy
                 </h3>
 
-                <div className="flex items-center gap-2 mt-1">
-                  <span className="text-[11px] line-through text-[#9d7b5c]">
-                    R$199,80
-                  </span>
-                  <span className="text-[15px] font-semibold text-[#241710]">
-                    R$179,90
-                  </span>
+                <div className="mt-1.5">
+                  <div className="flex items-end gap-2">
+                    <span className="text-[10px] uppercase tracking-[0.12em] text-[#9d7b5c]">
+                      Kit
+                    </span>
+                    <span className="text-[17px] font-semibold leading-none tracking-[-0.04em] text-[#241710]">
+                      R$239,90
+                    </span>
+                  </div>
+
+                  <p className="mt-1 text-[10px] leading-4 text-[#4b392d]">
+                    <strong>15% OFF no PIX</strong> ou 3x sem juros
+                  </p>
+
+                  <p className="text-[10px] leading-4 text-[#9d7b5c]">
+                    + frete grátis
+                  </p>
                 </div>
               </div>
 
               <a
                 href="#kit"
-                className="ml-3 inline-flex items-center gap-1 rounded-full bg-[#241710] px-4 py-2 text-[11px] text-white whitespace-nowrap"
+                className="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#241710] px-3 py-2 text-[10px] text-white whitespace-nowrap"
               >
                 Comprar
                 <ArrowRight className="h-3 w-3" />
