@@ -17,12 +17,12 @@ const promoItems = [
   },
   {
     icon: BadgePercent,
-    title: "10% de desconto no PIX",
+    title: "15% de desconto no PIX",
     description: "Garanta o melhor valor na compra à vista.",
   },
   {
     icon: Truck,
-    title: "Frete grátis para Sul e Sudeste",
+    title: "Frete grátis",
     description: "Receba seu protocolo com condição especial.",
   },
 ];
@@ -57,7 +57,7 @@ const faqItems = [
   {
     category: "Venda",
     question: "Quais promoções estão disponíveis?",
-    answer: "3x sem juros, 10% no PIX e frete grátis.",
+    answer: "3x sem juros, 15% no PIX e frete grátis.",
   },
   {
     category: "Entrega",
@@ -120,7 +120,7 @@ export function PromoLeadSection() {
       <section className="bg-[#f6f2eb] px-6 pb-10 md:px-10 lg:px-14 xl:px-20">
         <div className="mx-auto max-w-7xl">
           <motion.div className="grid gap-4 border-y border-[#ded1c0] py-5 md:grid-cols-3">
-            {promoItems.map((item, index) => {
+            {promoItems.map((item) => {
               const Icon = item.icon;
 
               return (
@@ -177,27 +177,54 @@ export function PromoLeadSection() {
               </p>
 
               {/* MOBILE CORRETO EM 2 LINHAS FIXAS */}
-              <h2 className="mt-4 text-[34px] leading-[1.1] text-white md:text-6xl md:max-w-[13ch]">
+              <h2 className="mt-4 text-[34px] leading-[1.1] text-white md:max-w-[13ch] md:text-6xl">
                 <span className="block">Garanta as melhores promoções</span>
                 <span className="block">do Renova Therapy.</span>
               </h2>
 
               <p className="mt-6 text-base text-white/78 md:max-w-[46ch]">
-                Preencha seus dados para receber ofertas antes de todo mundo.
+                Aproveite a condição especial para garantir o seu protocolo completo.
               </p>
 
             </motion.div>
 
-            {/* FORM */}
-            <motion.form className="flex flex-col gap-5 rounded-[28px] border border-white/12 bg-white/[0.06] p-6 backdrop-blur-md md:p-8">
-              <input placeholder="Seu nome" className="border-b bg-transparent py-4 text-white" />
-              <input placeholder="Seu e-mail" className="border-b bg-transparent py-4 text-white" />
-              <input placeholder="WhatsApp com DDD" className="border-b bg-transparent py-4 text-white" />
+            {/* CTA */}
+            <motion.div className="flex flex-col gap-5 rounded-[28px] border border-white/12 bg-white/[0.06] p-6 text-center backdrop-blur-md md:p-8 md:text-left">
+              <p className="text-xs uppercase tracking-[0.24em] text-white/68">
+                Kit Renova Therapy
+              </p>
 
-              <button className="mt-3 rounded-full bg-white px-8 py-4 text-[#241710]">
-                Enviar
-              </button>
-            </motion.form>
+              <div>
+                <p className="text-sm text-white/72">
+                  Por apenas
+                </p>
+
+                <p className="mt-2 text-5xl leading-none text-white md:text-6xl">
+                  R$239,90
+                </p>
+              </div>
+
+              <div className="grid gap-3 text-sm text-white/78">
+                <p>
+                  15% de desconto à vista no PIX.
+                </p>
+
+                <p>
+                  Ou em até 3x sem juros no cartão.
+                </p>
+
+                <p>
+                  Frete grátis.
+                </p>
+              </div>
+
+              <a
+                href="#"
+                className="mt-3 inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-[#241710] transition hover:bg-white/90"
+              >
+                Garantir agora mesmo o meu Kit
+              </a>
+            </motion.div>
 
           </div>
         </div>
