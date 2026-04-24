@@ -207,7 +207,7 @@ export function PromoLeadSection() {
             </div>
 
             <a
-              href="#"
+              href="https://pagar.vindi.com.br/f0c69fdf39539221dfbb8109d7bc67641bc9e233"
               className="mt-6 inline-flex min-h-[54px] w-full max-w-[480px] items-center justify-center rounded-full bg-white px-8 py-4 text-center text-[#241710] shadow-[0_18px_45px_rgba(0,0,0,0.24)] transition hover:bg-white/90 md:mt-7"
             >
               Garantir agora mesmo o meu Kit
