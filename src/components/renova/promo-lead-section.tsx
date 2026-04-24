@@ -152,12 +152,12 @@ export function PromoLeadSection() {
       </section>
 
       {/* BLOCO FINAL */}
-      <section className="relative w-full overflow-hidden bg-[#241710]">
+      <section className="relative min-h-[680px] w-full overflow-hidden bg-[#241710] md:min-h-[760px] lg:min-h-[820px] xl:min-h-[860px]">
         {/* DESKTOP */}
         <img
           src="/final.png"
           alt=""
-          className="hidden h-auto w-full object-contain md:block"
+          className="absolute bottom-0 left-1/2 hidden h-[92%] w-[92%] -translate-x-1/2 object-contain object-bottom md:block lg:h-[94%] lg:w-[90%] xl:h-[95%] xl:w-[88%]"
         />
 
         {/* MOBILE BG */}
@@ -168,47 +168,48 @@ export function PromoLeadSection() {
         />
 
         {/* OVERLAY ESCURECIDO */}
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/35 md:bg-black/32" />
 
-        <div className="relative z-10 min-h-[620px] md:absolute md:inset-0 md:min-h-0">
+        <div className="relative z-10 min-h-[680px] md:min-h-[760px] lg:min-h-[820px] xl:min-h-[860px]">
           {/* TEXTO SUPERIOR */}
-          <motion.div className="absolute left-1/2 top-[6%] w-full max-w-[920px] -translate-x-1/2 px-6 text-center md:top-[7%]">
+          <motion.div className="absolute left-1/2 top-[6%] w-full max-w-[860px] -translate-x-1/2 px-6 text-center md:top-[6.5%]">
             <p className="text-[10px] uppercase tracking-[0.24em] text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)] md:text-xs">
               Condições exclusivas
             </p>
 
-            <h2 className="mx-auto mt-3 max-w-[820px] text-[30px] leading-[1.08] text-white drop-shadow-[0_3px_16px_rgba(0,0,0,0.42)] md:text-[42px] lg:text-[50px]">
+            <h2 className="mx-auto mt-3 max-w-[760px] text-[30px] leading-[1.08] text-white drop-shadow-[0_3px_16px_rgba(0,0,0,0.42)] md:text-[38px] lg:text-[46px] xl:text-[50px]">
               Garanta as melhores promoções
               <span className="block">do Renova Therapy.</span>
             </h2>
 
-            <p className="mx-auto mt-4 max-w-[620px] text-[15px] leading-relaxed text-white/90 drop-shadow-[0_2px_12px_rgba(0,0,0,0.38)] md:text-base">
-              Aproveite a condição especial para garantir o seu protocolo completo.
+            <p className="mx-auto mt-4 max-w-[560px] text-[14px] leading-relaxed text-white/90 drop-shadow-[0_2px_12px_rgba(0,0,0,0.38)] md:text-[15px] lg:text-base">
+              Aproveite a condição especial para garantir o seu protocolo
+              completo.
             </p>
           </motion.div>
 
           {/* CTA CENTRAL INFERIOR */}
-          <motion.div className="absolute bottom-[6%] left-1/2 flex w-full max-w-[620px] -translate-x-1/2 flex-col items-center px-6 text-center md:bottom-[8%]">
+          <motion.div className="absolute bottom-[5.5%] left-1/2 flex w-full max-w-[560px] -translate-x-1/2 flex-col items-center px-6 text-center md:bottom-[7%] md:left-[34%] md:max-w-[480px] lg:left-[35%] xl:left-[36%]">
             <p className="text-[10px] uppercase tracking-[0.24em] text-white/86 drop-shadow-[0_2px_10px_rgba(0,0,0,0.38)] md:text-xs">
               Kit Renova Therapy
             </p>
 
-            <p className="mt-3 text-sm font-medium text-white/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.38)] md:mt-4">
+            <p className="mt-3 text-sm font-medium text-white/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.38)] md:mt-3">
               Por apenas
             </p>
 
-            <p className="mt-1 text-[50px] leading-none text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.48)] md:text-[68px] lg:text-[76px]">
+            <p className="mt-1 text-[48px] leading-none text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.48)] md:text-[60px] lg:text-[66px] xl:text-[70px]">
               R$239,90
             </p>
 
-            <div className="mt-4 flex flex-col items-center gap-2 text-[14px] leading-relaxed text-white/92 drop-shadow-[0_2px_12px_rgba(0,0,0,0.42)] md:mt-5 md:text-[15px]">
+            <div className="mt-4 flex flex-col items-center gap-1.5 text-[13px] leading-relaxed text-white/92 drop-shadow-[0_2px_12px_rgba(0,0,0,0.42)] md:mt-4 md:text-[14px] lg:text-[15px]">
               <p>15% de desconto à vista no PIX.</p>
               <p>Ou em até 3x sem juros no cartão + frete grátis.</p>
             </div>
 
             <a
               href="https://pagar.vindi.com.br/f0c69fdf39539221dfbb8109d7bc67641bc9e233"
-              className="mt-6 inline-flex min-h-[54px] w-full max-w-[480px] items-center justify-center rounded-full bg-white px-8 py-4 text-center text-[#241710] shadow-[0_18px_45px_rgba(0,0,0,0.24)] transition hover:bg-white/90 md:mt-7"
+              className="mt-5 inline-flex min-h-[52px] w-full max-w-[440px] items-center justify-center rounded-full bg-white px-7 py-4 text-center text-[15px] text-[#241710] shadow-[0_18px_45px_rgba(0,0,0,0.24)] transition hover:bg-white/90 md:mt-6"
             >
               Garantir agora mesmo o meu Kit
             </a>
