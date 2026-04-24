@@ -167,8 +167,8 @@ export function PromoLeadSection() {
           className="absolute inset-0 h-full w-full object-cover object-center md:hidden"
         />
 
-        {/* OVERLAY 15% */}
-        <div className="absolute inset-0 bg-black/15" />
+        {/* OVERLAY ESCURECIDO */}
+        <div className="absolute inset-0 bg-black/30" />
 
         <div className="relative z-10 min-h-[760px] md:absolute md:inset-0 md:min-h-0">
           {/* TEXTO SUPERIOR */}
