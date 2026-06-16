@@ -8,6 +8,7 @@ import {
   CreditCard,
   Truck,
 } from "lucide-react";
+import { AffiliateCheckoutLink } from "../affiliate-checkout-link";
 
 const promoItems = [
   {
@@ -206,12 +207,12 @@ export function PromoLeadSection() {
               <p>Ou em até 3x sem juros no cartão + frete grátis.</p>
             </div>
 
-            <a
-              href="https://pagar.vindi.com.br/f0c69fdf39539221dfbb8109d7bc67641bc9e233"
+            <AffiliateCheckoutLink
+              page="renova-therapy"
               className="mt-6 inline-flex min-h-[54px] w-full max-w-[480px] items-center justify-center rounded-full bg-white px-8 py-4 text-center text-[#241710] shadow-[0_18px_45px_rgba(0,0,0,0.24)] transition hover:bg-white/90 md:mt-7"
             >
               Garantir agora mesmo o meu Kit
-            </a>
+            </AffiliateCheckoutLink>
           </motion.div>
         </div>
       </section>

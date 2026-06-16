@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { AffiliateCheckoutLink } from "../affiliate-checkout-link";
 
 export function ModelCtaSection() {
   return (
@@ -55,13 +56,13 @@ export function ModelCtaSection() {
               fortalecer os fios e manter a autoestima em alta durante a transformação do corpo.
             </p>
 
-            <a
-              href="https://pagar.vindi.com.br/f0c69fdf39539221dfbb8109d7bc67641bc9e233"
+            <AffiliateCheckoutLink
+              page="renova-therapy"
               className="mt-8 inline-flex w-fit items-center gap-3 rounded-full bg-[#241710] px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.22em] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#9a7244] hover:shadow-[0_18px_35px_rgba(18,10,7,0.28)] md:px-7"
             >
               <span>Obter Kit Renova Therapy</span>
               <ArrowRight className="h-4 w-4" />
-            </a>
+            </AffiliateCheckoutLink>
           </motion.div>
         </div>
       </div>
